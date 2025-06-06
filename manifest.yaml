@@ -3,15 +3,15 @@ type: plugin
 author: zxp
 name: rabbit_send_plugin
 label:
-  en_US: rabbit_send_plugin
-  ja_JP: rabbit_send_plugin
-  zh_Hans: rabbit_send_plugin
-  pt_BR: rabbit_send_plugin
+  en_US: RabbitMQ Plugin
+  ja_JP: RabbitMQ プラグイン
+  zh_Hans: RabbitMQ 插件
+  pt_BR: Plugin RabbitMQ
 description:
-  en_US: send data to rabbit server
-  ja_JP: send data to rabbit server
-  zh_Hans: send data to rabbit server
-  pt_BR: send data to rabbit server
+  en_US: Send and consume messages with RabbitMQ server
+  ja_JP: RabbitMQサーバーとメッセージを送受信する
+  zh_Hans: 发送和消费RabbitMQ服务器的消息
+  pt_BR: Enviar e consumir mensagens com o servidor RabbitMQ
 icon: icon.svg
 resource:
   memory: 268435456
@@ -52,3 +52,4 @@ created_at: 2025-06-06T09:58:47.707146+08:00
 privacy: PRIVACY.md
 repo: https://github.com/294033186/rabbitmq-plugin.git
 verified: false
+

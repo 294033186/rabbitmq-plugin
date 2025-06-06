@@ -36,8 +36,8 @@ credentials_for_provider:
     type: text-input
     required: false
     label:
-      en_US: Password
-      zh_Hans: 密码
+      en_US: Virtual Host
+      zh_Hans: 虚拟主机
     placeholder:
       en_US: 'default: /'
       zh_Hans: '默认: /'
@@ -47,3 +47,4 @@ tools:
 extra:
   python:
     source: provider/rabbit_send_plugin.py
+
