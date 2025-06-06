@@ -59,6 +59,23 @@ RabbitMQ Plugin 是一个用于 Dify 平台的插件，提供与 RabbitMQ 消息
 }
 ```
 
+## 使用教程
+### 输入认证信息
+<img width="1439" alt="image" src="https://github.com/user-attachments/assets/9386ad80-5b3e-4704-9686-10bedd51ba9e" />
+### 认证通过后会得到已授权状态
+<img width="1435" alt="image" src="https://github.com/user-attachments/assets/38a61120-f7c0-443d-a8c6-62e5e8478098" />
+### 发送模式，配置发送的exchange和routingkey
+<img width="1439" alt="image" src="https://github.com/user-attachments/assets/46680b8c-9f05-4dee-a451-1f30146f91b6" />
+### 消费模式，配置消费的队列，和需要消费的消息条数
+<img width="1432" alt="image" src="https://github.com/user-attachments/assets/390c7f9c-f58b-44ed-af9c-4b1d69a285ec" />
+### 运行结果
+#### 发送消息
+<img width="1439" alt="image" src="https://github.com/user-attachments/assets/54d72104-c54a-4ded-8fbd-2321f1a2b68c" />
+#### 消费消息
+<img width="1431" alt="image" src="https://github.com/user-attachments/assets/af923ffc-06b8-4f51-af34-6c7df6f2a696" />
+
+
+
 ## 注意事项
 
 1. 使用前请确保 RabbitMQ 服务器已正确配置并可访问
