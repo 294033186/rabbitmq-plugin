@@ -9,7 +9,7 @@ identity:
     en_US: send data to rabbit server
     zh_Hans: 发送消息到rabbitmq
     pt_BR: send data to rabbit server
-  icon: icon.ico
+  icon: rabbit.svg
 credentials_for_provider:
   addresses:
     type: text-input
