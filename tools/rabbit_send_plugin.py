@@ -14,8 +14,6 @@ class RabbitSendPluginTool(Tool):
         routing_key = tool_parameters.get('RoutingKey')
         message = tool_parameters.get('Message')
         if exchange and routing_key and message:
-            print(1)
-            print(json.dumps(self.runtime.credentials))
             rabbit_client = get_rabbit_client(self.runtime.credentials)
             conn = pika.BlockingConnection(rabbit_client)
             conn.channel().basic_publish(exchange=exchange, routing_key=routing_key, body=message)
