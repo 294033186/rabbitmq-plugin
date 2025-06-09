@@ -1,6 +1,6 @@
 # RabbitMQ Plugin for Dify
 
-**Author:** 294033186  
+**Author:** zxp088
 **Version:** 0.0.1  
 **Type:** tool  
 
