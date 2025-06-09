@@ -1,72 +1,71 @@
-# 隐私政策
+# Privacy Policy
 
-## RabbitMQ Plugin 隐私政策
+## RabbitMQ Plugin Privacy Policy
 
-最后更新日期：2025年6月6日
+**Last Updated: June 6, 2025**
 
-### 引言
+### Introduction
 
-RabbitMQ Plugin（以下简称"插件"）由 zxp（以下简称"我们"）开发，旨在为 Dify 平台提供与 RabbitMQ 消息队列系统交互的功能。本隐私政策旨在说明我们如何收集、使用、存储和保护您的信息。
+The RabbitMQ Plugin (hereinafter referred to as "the Plugin") is developed by zxp (hereinafter referred to as "we"), and is designed to enable interaction with the RabbitMQ message queue system on the Dify platform. This Privacy Policy outlines how we collect, use, store, and protect your information.
 
-### 信息收集与使用
+### Information Collection and Use
 
-#### 我们收集的信息
+#### Information We Collect
 
-1. **连接凭证**：
-   - RabbitMQ 服务器地址
-   - RabbitMQ 用户名和密码
-   - RabbitMQ 虚拟主机信息
+1. **Connection Credentials**:
+   - RabbitMQ server address
+   - RabbitMQ username and password
+   - RabbitMQ virtual host information
 
-2. **消息数据**：
-   - 您通过插件发送到 RabbitMQ 的消息内容
-   - 您从 RabbitMQ 消费的消息内容
+2. **Message Data**:
+   - Messages you send to RabbitMQ via the Plugin
+   - Messages you consume from RabbitMQ via the Plugin
 
-#### 信息使用目的
+#### Purpose of Information Use
 
-我们收集的信息仅用于以下目的：
-- 建立与您指定的 RabbitMQ 服务器的连接
-- 执行您请求的消息发送和消费操作
-- 提供插件的核心功能
+We collect this information solely for the following purposes:
+- To establish a connection to the RabbitMQ server you specify
+- To perform the message publishing and consumption operations you request
+- To provide the core functionality of the Plugin
 
-### 数据存储与安全
+### Data Storage and Security
 
-1. **凭证存储**：
-   - 您提供的 RabbitMQ 连接凭证由 Dify 平台安全存储
-   - 我们的插件不会在其他位置存储或缓存您的凭证
+1. **Credential Storage**:
+   - The RabbitMQ credentials you provide are securely stored by the Dify platform
+   - Our Plugin does not store or cache your credentials elsewhere
 
-2. **消息数据**：
-   - 插件不会永久存储您发送或消费的消息内容
-   - 消息数据仅在执行操作期间临时处理，操作完成后不会保留
+2. **Message Data**:
+   - The Plugin does not permanently store the messages you send or consume
+   - Message data is only temporarily processed during operations and is not retained afterward
 
-3. **数据传输**：
-   - 所有数据传输仅发生在您的 Dify 实例和您指定的 RabbitMQ 服务器之间
-   - 插件不会将数据传输到任何第三方服务器
+3. **Data Transmission**:
+   - All data transmission occurs only between your Dify instance and your specified RabbitMQ server
+   - The Plugin does not transmit any data to third-party servers
 
-### 第三方服务
+### Third-Party Services
 
-本插件不使用任何第三方服务来处理您的数据。所有操作都在您的 Dify 实例和您指定的 RabbitMQ 服务器之间直接进行。
+The Plugin does not use any third-party services to process your data. All operations are performed directly between your Dify instance and your RabbitMQ server.
 
-### 数据共享
+### Data Sharing
 
-我们不会与任何第三方共享您的信息，除非：
-- 您明确授权
-- 法律要求
+We do not share your information with any third parties, except:
+- When you explicitly authorize us to do so
+- When required by law
 
-### 用户权利
+### User Rights
 
-作为用户，您有权：
-- 随时卸载插件
-- 修改或删除您提供的连接凭证
-- 了解我们如何处理您的数据
+As a user, you have the right to:
+- Uninstall the Plugin at any time
+- Modify or delete the RabbitMQ connection credentials you have provided
+- Understand how we handle your data
 
-### 隐私政策更新
+### Privacy Policy Updates
 
-我们可能会不时更新本隐私政策。更新后的版本将在 GitHub 仓库中发布，并在插件更新时提供。
+We may update this Privacy Policy from time to time. Updated versions will be published in our GitHub repository and made available during Plugin updates.
 
-### 联系我们
+### Contact Us
 
-如果您对本隐私政策有任何疑问或顾虑，请通过以下方式联系我们：
+If you have any questions or concerns about this Privacy Policy, please contact us through:
 
-- GitHub 仓库：https://github.com/294033186/rabbitmq-plugin
-- 提交 Issue：https://github.com/294033186/rabbitmq-plugin/issues
-
+- GitHub Repository: [https://github.com/294033186/rabbitmq-plugin](https://github.com/294033186/rabbitmq-plugin)  
+- Submit an Issue: [https://github.com/294033186/rabbitmq-plugin/issues](https://github.com/294033186/rabbitmq-plugin/issues)
