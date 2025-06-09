@@ -1,15 +1,15 @@
 identity:
-  author: zxp
-  name: rabbit_send_plugin
+  author: zxp088
+  name: rabbitmq
   label:
-    en_US: rabbit_send_plugin
-    zh_Hans: rabbit_send_plugin
-    pt_BR: rabbit_send_plugin
+    en_US: RabbitMq
+    zh_Hans: RabbitMq
+    pt_BR: RabbitMq
   description:
     en_US: send data to rabbit server
     zh_Hans: 发送消息到rabbitmq
     pt_BR: send data to rabbit server
-  icon: rabbit.svg
+  icon: icon_1.svg
 credentials_for_provider:
   addresses:
     type: text-input

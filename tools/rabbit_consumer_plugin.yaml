@@ -1,6 +1,6 @@
 identity:
   name: rabbit_consumer_plugin
-  author: zxp
+  author: zxp088
   label:
     en_US: rabbit_consumer_plugin
     zh_Hans: rabbit消费插件

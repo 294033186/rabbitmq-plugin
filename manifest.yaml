@@ -1,7 +1,7 @@
 version: 1.0.0
 type: plugin
-author: zxp
-name: rabbit_send_plugin
+author: zxp088
+name: rabbitmq
 label:
   en_US: RabbitMQ Plugin
   ja_JP: RabbitMQ プラグイン
@@ -12,7 +12,7 @@ description:
   ja_JP: RabbitMQサーバーとメッセージを送受信する
   zh_Hans: 发送和消费RabbitMQ服务器的消息
   pt_BR: Enviar e consumir mensagens com o servidor RabbitMQ
-icon: icon.svg
+icon: icon_1.svg
 resource:
   memory: 268435456
   permission:

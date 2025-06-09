@@ -6,7 +6,7 @@
 
 ### Introduction
 
-The RabbitMQ Plugin (hereinafter referred to as "the Plugin") is developed by zxp (hereinafter referred to as "we"), and is designed to enable interaction with the RabbitMQ message queue system on the Dify platform. This Privacy Policy outlines how we collect, use, store, and protect your information.
+The RabbitMQ Plugin (hereinafter referred to as "the Plugin") is developed by zxp088 (hereinafter referred to as "we"), and is designed to enable interaction with the RabbitMQ message queue system on the Dify platform. This Privacy Policy outlines how we collect, use, store, and protect your information.
 
 ### Information Collection and Use
 
