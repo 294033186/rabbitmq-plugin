@@ -1,43 +1,47 @@
-# RabbitMQ Plugin
+# RabbitMQ Plugin for Dify
 
-## Description
+**Author:** zxp  
+**Version:** 0.0.1  
+**Type:** tool  
 
-The **RabbitMQ Plugin** is a plugin for the Dify platform that provides integration with the RabbitMQ message queue system. With this plugin, you can send messages to a RabbitMQ server and consume messages from a RabbitMQ queue within your Dify applications.
+## 描述
 
-## Features
+RabbitMQ Plugin 是一个用于 Dify 平台的插件，提供与 RabbitMQ 消息队列系统交互的能力。通过此插件，您可以在 Dify 应用中发送消息到 RabbitMQ 服务器，以及从 RabbitMQ 队列中消费消息。
 
-This plugin offers two main functions:
+## 功能
 
-1. **Send Message (`rabbit_send_plugin`)**:
-   - Send a message to a specified RabbitMQ exchange
-   - Support for specifying a routing key
-   - Custom message body support
+该插件提供两个主要功能：
 
-2. **Consume Message (`rabbit_consumer_plugin`)**:
-   - Consume messages from a specified RabbitMQ queue
-   - Support for limiting the number of messages consumed
-   - Returns the consumed message content
+1. **发送消息 (rabbit_send_plugin)**：
+   - 向指定的 RabbitMQ 交换机发送消息
+   - 支持指定路由键
+   - 支持自定义消息内容
 
-## Requirements
+2. **消费消息 (rabbit_consumer_plugin)**：
+   - 从指定的 RabbitMQ 队列中消费消息
+   - 支持指定消费消息的数量
+   - 返回消费的消息内容
 
-- Dify platform version >= 1.4.1
-- An accessible RabbitMQ server
+## 安装要求
 
-## Configuration Parameters
+- Dify 平台版本 >= 1.4.1
+- 可访问的 RabbitMQ 服务器
 
-When installing the plugin, provide the following RabbitMQ connection information:
+## 配置参数
 
-- **rabbitmq addresses**: RabbitMQ server address in the format `host:port`, default is `127.0.0.1:5672`
-- **username**: RabbitMQ username
-- **password**: RabbitMQ password
-- **vhost**: RabbitMQ virtual host, default is `/`
+安装插件时，需要提供以下 RabbitMQ 连接信息：
 
-## Usage Examples
+- **rabbitmq addresses**：RabbitMQ 服务器地址，格式为 `host:port`，默认为 `127.0.0.1:5672`
+- **username**：RabbitMQ 用户名
+- **password**：RabbitMQ 密码
+- **vhost**：RabbitMQ 虚拟主机，默认为 `/`
 
-### Sending a Message
+## 使用示例
+
+### 发送消息
 
 ```
-// Send a message to the exchange named "my_exchange" with routing key "my_routing_key"
+// 向名为 "my_exchange" 的交换机发送消息，路由键为 "my_routing_key"
 {
   "Exchange": "my_exchange",
   "RoutingKey": "my_routing_key",
@@ -45,63 +49,39 @@ When installing the plugin, provide the following RabbitMQ connection informatio
 }
 ```
 
-### Consuming Messages
+### 消费消息
 
 ```
-// Consume 5 messages from the queue named "my_queue"
+// 从名为 "my_queue" 的队列中消费 5 条消息
 {
   "Queue": "my_queue",
   "Count": 5
 }
 ```
 
-## Usage Guide
+## 注意事项
 
-### Enter Authentication Information
-<img width="1439" alt="image" src="https://github.com/user-attachments/assets/9386ad80-5b3e-4704-9686-10bedd51ba9e" />
+1. 使用前请确保 RabbitMQ 服务器已正确配置并可访问
+2. 交换机和队列需要提前在 RabbitMQ 中创建
+3. 消费消息时，如果队列中的消息数量少于请求的数量，将只返回可用的消息
 
-### After Authentication, You Will See an "Authorized" Status
-<img width="1435" alt="image" src="https://github.com/user-attachments/assets/38a61120-f7c0-443d-a8c6-62e5e8478098" />
+## 故障排除
 
-### Send Mode: Configure the Target Exchange and Routing Key
-<img width="1439" alt="image" src="https://github.com/user-attachments/assets/46680b8c-9f05-4dee-a451-1f30146f91b6" />
+如果遇到连接问题，请检查：
 
-### Consume Mode: Configure the Queue and the Number of Messages to Consume
-<img width="1432" alt="image" src="https://github.com/user-attachments/assets/390c7f9c-f58b-44ed-af9c-4b1d69a285ec" />
+1. RabbitMQ 服务器是否正常运行
+2. 提供的连接信息（地址、用户名、密码、虚拟主机）是否正确
+3. 网络连接是否正常
+4. 防火墙设置是否允许相关端口的访问
 
-### Execution Results
+## 支持
 
-#### Sending Messages
-<img width="1439" alt="image" src="https://github.com/user-attachments/assets/54d72104-c54a-4ded-8fbd-2321f1a2b68c" />
+如有问题或需要帮助，请通过以下方式联系：
 
-#### Consuming Messages
-<img width="1431" alt="image" src="https://github.com/user-attachments/assets/af923ffc-06b8-4f51-af34-6c7df6f2a696" />
+- GitHub 仓库：https://github.com/294033186/rabbitmq-plugin
+- 提交 Issue：https://github.com/294033186/rabbitmq-plugin/issues
 
-
-## Notes
-
-1. Ensure that the RabbitMQ server is properly configured and accessible before use.
-2. The exchange and queue must be created in RabbitMQ in advance.
-3. When consuming messages, if the number of available messages is less than the requested count, only the available messages will be returned.
-
-## Troubleshooting
-
-If you encounter connection issues, please check:
-
-1. Whether the RabbitMQ server is running properly
-2. Whether the provided connection information (address, username, password, virtual host) is correct
-3. Whether the network connection is working properly
-4. Whether the firewall allows access to the relevant ports
-
-## Support
-
-If you have any questions or need help, please contact us via:
-
-- GitHub Repository: [https://github.com/294033186/rabbitmq-plugin](https://github.com/294033186/rabbitmq-plugin)
-- Submit an Issue: [https://github.com/294033186/rabbitmq-plugin/issues](https://github.com/294033186/rabbitmq-plugin/issues)
-
-## License
+## 许可证
 
 [MIT License](LICENSE)
-
 
